@@ -1,6 +1,6 @@
 
 import './App.css';
-import Clicker from './clicker';
+import Clicker from './clickerHooks';
 
 function App() {
   return (
