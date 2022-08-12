@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div id="app">
+    </div>
+    <script>
+        // tilsvarer det vi kaller model i M2
+        let state = { count: 0, ppc: 1 };
+        // let pointPerClick = { ppc: 1}
+       
+        
+
+        updateView();
+        function updateView(){
+           
+            document.getElementById('app').innerHTML = `
+                <p>Number ${state.count} </p>
+                <p>PPC ${state.ppc} </p>
+                <button onclick="state = { count: state.count += state.ppc, ppc: state.ppc }; updateView()"> 
+                    <!-- updateView skjer automatisk i React -->
+                    Click me
+                </button>   
+                <button onclick="upgrade = {...state, ppc: state.ppc += 1, count: state.count -= 10};   updateView()">
+                    oppgrader 
+                </button>        
+            `;
+    
+
+
+            
+            /*
+            Første linje button kunne vært skrevet slik: 
+            <button onclick="state.count++; updateView()">Klikk</button> 
+            Men i React gjør man det annerledes - man setter et helt nytt state-objekt
+
+            */
+        }
+    </script>
+</body>
+</html>
