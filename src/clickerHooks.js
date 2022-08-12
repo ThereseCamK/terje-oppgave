@@ -11,7 +11,7 @@ function Clicker(){
           <button onClick={() => setCount(count + ppc)}>
            klikk
           </button>
-          <button onClick={() => setppcCount(ppc + 1, count + 1)}>
+          <button onClick={() => setppcCount(ppc + 1)}>
            oppgrader
           </button>
         </div>
