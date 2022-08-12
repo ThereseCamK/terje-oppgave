@@ -13,11 +13,11 @@ class Clicker extends React.Component {
 
     count(){
         
-        this.setState({count: this.state.count += this.state.ppc, ppc: this.state.ppc });
+        this.setState({...this.state, count: this.state.count + this.state.ppc, ppc: this.state.ppc });
        
     }
     upgrade(){
-        this.setState({count: this.state.count -= 10, ppc: this.state.ppc += 1})
+        this.setState({...this.state, count: this.state.count - 10, ppc: this.state.ppc + 1})
     }
 
     render(){
