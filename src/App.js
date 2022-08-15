@@ -6,7 +6,7 @@ import {useNavigate} from 'react-router-dom';
 
 
 function App() {
-  // const [navigate, showChange] = useState('/Click')
+  // const [navigate, showClicker] = useState('/Click')
   const navigate = useNavigate();
   function showClick(){
     navigate('/Click')
