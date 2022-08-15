@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class Clicker extends React.Component {
     constructor(props){
@@ -26,10 +27,15 @@ class Clicker extends React.Component {
 
         return (
             <div>
+                  <Link to="/">Til hoved Siden</Link>
                 <p> du har klikket {count} ganger</p>
                 <p> antall poeng pr klikk {points}</p>
                 <button onClick={this.count}>klikk</button>
                 <button onClick={this.upgrade}>oppgrader</button>
+                <div>
+                    <Link to="/Clicker"> klikk for å komme til Klikker med Hooks</Link>
+                  
+                </div>
             </div>
         )
     }
