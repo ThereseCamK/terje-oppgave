@@ -1,0 +1,50 @@
+[{
+    "id": 1,
+    "task": "Trene",
+    "complete": true
+  }, {
+    "id": 2,
+    "task": "Spise Sunt",
+    "complete": true
+  }, {
+    "id": 3,
+    "task": "Jogge",
+    "complete": false
+  }, {
+    "id": 4,
+    "task": "Vaske Klær",
+    "complete": true
+  }, {
+    "id": 5,
+    "task": "Jobbe",
+    "complete": false
+  }, {
+    "id": 6,
+    "task": "Lage middag",
+    "complete": true
+  }, {
+    "id": 7,
+    "task": "Legge ut bilen for salg",
+    "complete": true
+  }, {
+    "id": 8,
+    "task": "Handle",
+    "complete": false
+  }, {
+    "id": 9,
+    "task": "støvsuge",
+    "complete": true
+  }, {
+    "id": 10,
+    "task": "Levere barna",
+    "complete": false
+  }, {
+    "id": 11,
+    "task": "Spille litt",
+    "complete": true
+  }, {
+    "id": 12,
+    "task": "Kjærestetid",
+    "complete": true
+  }]
+ 
