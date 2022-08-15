@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import ToDoForm from './toDoForm';
 import data from './todoData.json';
 import {Link} from'react-router-dom';
+import './App.css';
 
 export default function TodoMain (){
 
@@ -38,7 +39,7 @@ export default function TodoMain (){
           handleFilter={handleFilter}
           />
           <ToDoForm addNew={addNew}></ToDoForm>
-     <Link to="/">Til hoved Siden</Link>
+            <Link to="/">Til hoved Siden</Link>
  
 
       

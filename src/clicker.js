@@ -26,7 +26,8 @@ class Clicker extends React.Component {
         const points = this.state.ppc;
 
         return (
-            <div>
+            <div className="App">
+            <header className="App-header">
                   <Link to="/">Til hoved Siden</Link>
                 <p> du har klikket {count} ganger</p>
                 <p> antall poeng pr klikk {points}</p>
@@ -36,6 +37,7 @@ class Clicker extends React.Component {
                     <Link to="/Clicker"> klikk for å komme til Klikker med Hooks</Link>
                   
                 </div>
+                </header>
             </div>
         )
     }
