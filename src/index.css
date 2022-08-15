@@ -17,3 +17,10 @@ code {
 .todo {
   cursor: pointer;
 }
+button{
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: blueviolet;
+}
