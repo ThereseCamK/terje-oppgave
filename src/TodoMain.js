@@ -10,8 +10,9 @@ export default function TodoMain (){
     const [toDoList, setToDoList ] = useState(data);
  
     const handleToggle = (id) => {
+      let ID = parseInt(id);
       let mapped = toDoList.map(task => {
-        return task.id == id ? { ...task, complete: !task.complete } : { ...task};
+        return task.id === ID ? { ...task, complete: !task.complete } : { ...task};
       });
       setToDoList(mapped);
     }
