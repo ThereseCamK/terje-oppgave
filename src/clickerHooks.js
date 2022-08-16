@@ -13,10 +13,10 @@ function Clicker(){
             <Link to="/">Til hoved Siden</Link>
           <p>Du har klikket {count} ganger</p>
           <p>points pr click {ppc} </p>
-          <button onClick={() => setCount(count + ppc)}>
+          <button onClick={() => setCount(count + ppc, ppc + 0)}>
            klikk
           </button>
-          <button onClick={() => setppcCount(ppc + 1)}>
+          <button onClick={() => setppcCount(ppc+1, count - 10)}>
            oppgrader
           </button>
           </header>
