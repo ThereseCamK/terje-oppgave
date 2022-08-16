@@ -11,7 +11,7 @@ export default function TodoMain (){
  
     const handleToggle = (id) => {
       let mapped = toDoList.map(task => {
-        return task.id == id ? { ...task, complete: !task.complete } : { ...task};
+        return task.id === id ? { ...task, complete: !task.complete } : { ...task};
       });
       setToDoList(mapped);
     }
