@@ -24,3 +24,26 @@ button{
   color: white;
   background-color: blueviolet;
 }
+
+.inventory{
+  font-size: small;
+  color: green; 
+}
+.hide{
+  color: red; 
+}
+.inventoryBTN{
+  width: 30px;
+  height: 30px;
+  box-shadow: 2px 2px 5px white;
+  background-color: grey;
+}
+.addInventoryBTN{
+  width: 100px;
+  height: 30px;
+  box-shadow: 2px 2px 5px white;
+}
+input{
+  margin: 5px;
+  box-shadow: 2px 2px 5px white;
+}

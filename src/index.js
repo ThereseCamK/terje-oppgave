@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import Clicker from './clickerHooks';
 import Click from './clicker';
 import TodoMain from './TodoMain';
+import Inventory from './Inventory/InventoryApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
       <Route path="/Clicker" element={<Clicker />} /> 
       <Route path="/Click" element={<Click />} />
       <Route path="/toDoMain" element={<TodoMain />} />
+      <Route path="/inventory" element={<Inventory />} />
     
     </Routes>
     </BrowserRouter>

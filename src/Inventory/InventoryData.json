@@ -1,0 +1,33 @@
+[{
+    "id": 1,
+    "item": "egg",
+    "amount": 6,
+    "unit": "stk"
+   
+},
+{
+    "id": 2,
+    "item": "melk",
+    "amount": 1,
+    "unit": "ltr"
+},
+{
+    "id": 3,
+    "item": "brød",
+    "amount": 0,
+    "unit": "stk"
+},
+{
+    "id": 4,
+    "item": "ost",
+    "amount": 2,
+    "unit": "kg"
+},
+{
+    "id": 5,
+    "item": "kyllingfilet",
+    "amount": 6,
+    "unit": "stk"
+}
+
+]
