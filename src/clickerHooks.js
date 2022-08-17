@@ -7,6 +7,10 @@ import './App.css';
 function Clicker(){
     const [count, setCount] = useState(0);
     const [ppc, setppcCount] = useState(1);
+    const upgrade = function(){
+      setppcCount(ppc +1);
+      setCount(count - 10)
+    }
     return (
         <div className="App">
            <header className="App-header">
@@ -16,7 +20,7 @@ function Clicker(){
           <button onClick={() => setCount(count + ppc, ppc + 0)}>
            klikk
           </button>
-          <button onClick={() => setppcCount(ppc+1, count - 10)}>
+          <button onClick={ upgrade}>
            oppgrader
           </button>
           </header>
