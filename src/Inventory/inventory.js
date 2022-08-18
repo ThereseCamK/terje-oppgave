@@ -4,6 +4,7 @@ const Inventory =({inve, handleChange}) => {
     const visibilty = inve.amount === 0 ? 'disabled' :'';
 
     const handleAmount = change=> (e) =>{
+        console.log(change)
         e.preventDefault()      
         handleChange(e.currentTarget.id, change)
 
@@ -18,7 +19,7 @@ const Inventory =({inve, handleChange}) => {
            antall: {inve.amount}{ }{inve.unit} <br></br>
            <button className="inventoryBTN" 
            id={inve.id}  
-           onClick={handleAmount(1)}>+</button>
+           onClick={handleAmount(+1)}>+</button>
 
            <button className="inventoryBTN" 
             disabled={visibilty} id={inve.id}  

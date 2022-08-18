@@ -18,11 +18,11 @@ export default function Inventory(){
         }];
         setInventory(copy);
     }
-    const handleChange =(id) =>{
-        console.log(id)
+    const handleChange =(id, change) =>{
+        console.log(change)
         let ID = parseInt(id);
         let mappedInventory = inventoryList.map(inv =>{
-            return inv.id === ID ? {...inv, amount: inv.amount + 1}: {...inv};
+            return inv.id === ID ? {...inv, amount: inv.amount + change}: {...inv};
         })
         setInventory(mappedInventory)
     }
