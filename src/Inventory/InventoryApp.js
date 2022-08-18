@@ -26,24 +26,14 @@ export default function Inventory(){
         })
         setInventory(mappedInventory)
     }
-    const handleLessChange =(id) =>{
-        console.log(id)
-        let ID = parseInt(id);
-        let mappedInventory = inventoryList.map(inv =>{
-            return inv.id === ID ? {...inv, amount: inv.amount - 1}: {...inv};
-        })
-        setInventory(mappedInventory)
-     
-
-    }
-
+  
 
     return(
         <div className="App">
       <header className="App-header">
             <InventoryList inventoryList={inventoryList}
             handleChange={handleChange}
-            handleLessChange={handleLessChange}>
+            >
 
             </InventoryList>
             <InventoryForm addInventory={addInventory}></InventoryForm>

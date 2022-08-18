@@ -1,7 +1,7 @@
 import React from "react";
 import Inventory from './inventory';
 
-const InventoryList =({inventoryList, handleChange, handleLessChange})=>{
+const InventoryList =({inventoryList, handleChange})=>{
     return(
         <div>
             {
@@ -9,7 +9,7 @@ const InventoryList =({inventoryList, handleChange, handleLessChange})=>{
                     return(
                         <Inventory inve={inve}
                         handleChange={handleChange}
-                        handleLessChange={handleLessChange}></Inventory>
+                        ></Inventory>
                     )
                 })
             }
